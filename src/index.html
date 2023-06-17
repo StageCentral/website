@@ -20,7 +20,7 @@
 <head> 
     @@include('./_head.html', {
         "path": ".",
-        "title": "Neumorphism UI"
+        "title": "Operable Backstage Distro"
     })
 </head>
 
@@ -37,18 +37,18 @@
                 <div class="row justify-content-center text-center pt-6">
                     <div class="col-lg-8 col-xl-8">
                         <h1 class="display-2 mb-3">Backstage for Kubernetes</h1>
-                        <p class="lead px-md-6 mb-5"><strong>StageCentral</strong> is a Backstage distribution for Kubernetes.  Build for simple deployment and onboarding, for software teams that don't have time to waste.</p>
+                        <p class="lead px-md-6 mb-5"><strong>StageCentral</strong> is an OSS <a href="https://backstage.io">Backstage</a> distribution for Kubernetes.  Built for simple deployment and onboarding, for software teams that don't have time to waste.</p>
                         <div class="d-flex flex-column flex-wrap flex-md-row justify-content-md-center mb-5">
-                            <a href="https://themesberg.com/product/ui-kits/neumorphism-ui" target="_blank" class="btn btn-primary mb-3 mb-lg-0 mr-3"><i class="fas fa-play mr-2"></i> Get Started</a>
+                            <a href="https://github.com/stagecentral" target="_blank" class="btn btn-primary mb-3 mb-lg-0 mr-3"><i class="fas fa-play mr-2"></i> Get Started</a>
                             <div class="mt-2">
-                                <a class="github-button" href="https://github.com/themesberg/neumorphism-ui" data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/neumorphism-ui on GitHub">Star</a>
+                                <a class="github-button" href="https://github.com/stagecentral" data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star stagecentral/stagecentral on GitHub">Star</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section section-lg">
+        <section class="section section-bg-soft">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -58,7 +58,7 @@
                                 <span class="fas fa-box-open"></span>
                             </div>
                             <h2 class="h5 my-3">Helm Chart</h2>
-                            <p class="px-lg-4">Beatifully crafted and neumorphism inspired elements</p>
+                            <p class="px-lg-4">A curated and well-tested Helm chart supporting multiple deployment configurations</p>
                         </div>
                         <!-- End of Icon box -->
                     </div>
@@ -69,7 +69,7 @@
                                 <span class="fas fa-record-vinyl"></span>
                             </div>
                             <h2 class="h5 my-3">Docker Images</h2>
-                            <p class="px-lg-4">Navigation bars, pricing cards, footers and many more sections to enhance page variety</p>
+                            <p class="px-lg-4">Curated Docker images for x86-64 and ARM</p>
                         </div>
                         <!-- End of Icon box -->
                     </div>
@@ -79,8 +79,8 @@
                             <div class="icon icon-shape icon-lg bg-soft shadow-soft border border-light rounded-circle mb-3">
                                 <span class="far fa-file-alt"></span>
                             </div>
-                            <h2 class="h5 my-3">Quick onboarding</h2>
-                            <p class="px-lg-4">We took the time to create a few example pages to show you how neumorphic pages can look like</p>
+                            <h2 class="h5 my-3">Built with Maintainability in Mind</h2>
+                            <p class="px-lg-4">Full flexibility of open-source. <br> Built for continuous change and stress-free upgrades</p>
                         </div>
                         <!-- End of Icon box -->
                     </div>
@@ -88,7 +88,7 @@
             </div>
         </section>
 
-        @@include('./components/_accordions.html', {
+        <!-- @@include('./components/_accordions.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
         })
@@ -121,14 +121,14 @@
         @@include('./components/_buttons.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
-        })
+        }) -->
 
-        @@include('./components/_forms.html', {
+        @@include('./components/_stagecentral_signup_form.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
         })
 
-        @@include('./components/_modals.html', {
+        <!-- @@include('./components/_modals.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
         })
@@ -176,11 +176,11 @@
         @@include('./components/_typography.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
-        })
+        }) -->
 
         <!-- si asa mai departe -->
         
-        <section class="section section-md bg-soft">
+        <!-- <section class="section section-md bg-soft">
             <div class="container">
                 <div class="row justify-content-center mb-5 mb-lg-6">
                     <div class="col-12 text-center">
@@ -194,122 +194,9 @@
                 })
 
             </div>
-        </section>
-        <section class="section section-lg bg-soft">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h1 class="font-weight-light">Notable <span class="font-weight-bold">features</span></h1>
-                        <p class="lead">You get all Bootstrap components fully customized. Besides, you receive numerous plugins out of the box and ready to use</p>
-                    </div>
-                </div>
-                <div class="row mt-6">
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fab fa-bootstrap"></span>
-                            </div>
-                            <h2 class="h5 my-3">Latest Bootstrap</h2>
-                            <p>A responsive and mobile-first theme built with the world's most popular CSS framework</p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fab fa-sass"></span>
-                            </div>
-                            <h2 class="h5 my-3">Build with Sass</h2>
-                            <p>Change one variable and the theme adapts. Colors, fonts, sizes, buttons... you name it
-                            </p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fas fa-mobile-alt"></span>
-                            </div>
-                            <h2 class="h5 my-3">Responsive Design</h2>
-                            <p>Did you know 53% of the world web traffic is mobile? Pixel is fully responsive and mobile first</p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fas fa-puzzle-piece"></span>
-                            </div>
-                            <h2 class="h5 my-3">Modular approach</h2>
-                            <p>Nicely customized components that can be reused anytime and anywhere in your project</p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fab fa-gulp"></span>
-                            </div>
-                            <h2 class="h5 my-3">Gulp & BrowserSync</h2>
-                            <p>With our custom Gulp commands & BrowserSync we offer a seemless and fast workflow for your project</p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fas fa-file-alt"></span>
-                            </div>
-                            <h2 class="h5 my-3">Well documented</h2>
-                            <p>Our kit is delivered with very detailed documentation, describing all components, styles and usages</p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fas fa-tachometer-alt"></span>
-                            </div>
-                            <h2 class="h5 my-3">Google PageSpeed</h2>
-                            <p>Neumorphism UI has 80+ scores on Google PageSpeed Insights to offer you and your clients a fast website
-                            </p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <span class="fas fa-image"></span>
-                            </div>
-                            <h2 class="h5 my-3">SVG illustrations</h2>
-                            <p>Photography and Illustration SVGs are included in the download package and are free to use
-                            </p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Icon box -->
-                        <div class="icon-box text-center mb-5">
-                            <div class="icon icon-shape icon-shape-sm shadow-soft border border-light rounded-circle">
-                                <img class="navbar-brand-dark" style="height: 20px;" src="./assets/img/brand/dark.svg" alt="Neumorphism logo">
-                            </div>
-                            <h2 class="h5 my-3">Neumorphic design</h2>
-                            <p>We crafted each component with great care so it represents the latest neumorphic design trend</p>
-                        </div>
-                        <!-- End of Icon box -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-lg bg-soft">
+        </section> -->
+       
+        <!-- <section class="section section-lg bg-soft">
             <div class="container">
                 <div class="row justify-content-center mb-5 mb-lg-6">
                     <div class="col-12 text-center">
@@ -355,8 +242,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section section-lg bg-soft">
+        </section> -->
+        <!-- <section class="section section-lg bg-soft">
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-10 col-xl-12">
@@ -433,8 +320,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section section-lg bg-soft">
+        </section> -->
+        <!-- <section class="section section-lg bg-soft">
             <div class="container">
                 <div class="row justify-content-center text-center text-dark mb-5">
                     <div class="col-lg-9 col-xl-8">
@@ -468,87 +355,12 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section section-lg overflow-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-8">
-                        <h2 class="h1 font-weight-light mb-3"><strong>Open source</strong> project</h2>
-                        <p class="lead mb-4">Neumorphism UI is an open source UI Kit that is licensed under the MIT License. Consider giving us a star on the official Github repository to spread the news!</p>
-                        <div class="d-flex align-items-center">
-                            <a href="https://github.com/themesberg/pixel-bootstrap-ui-kit" target="_blank" class="btn btn-primary mr-4">
-                                <span class="fab fa-github mr-1"></span> View on GitHub
-                            </a>
-                            <!-- Place this tag where you want the button to render. -->
-                            <div class="mt-2">
-                                <!-- Place this tag where you want the button to render. -->
-                                <a class="github-button" href="https://github.com/themesberg/neumorphism-ui" data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/neumorphism-ui on GitHub">Star</a>                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="github-big-icon">
-                            <span class="fab fa-github"></span>
-                        </div>
-                      </div>
-                </div>
-                <div class="row mt-6">
-                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="card bg-soft shadow-soft border-light p-4">
-                            <!-- Header -->
-                            <div class="card-header pb-0">
-                                <span class="d-block">
-                                    <span class="h2 font-weight-bold align-top">Free Demo</span>
-                                </span>
-                            </div>
-                            <!-- End Header -->
-                            <!-- Content -->
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush price-list">
-                                    <li class="list-group-item bg-soft pl-0"><strong>200</strong> Components</li>
-                                    <li class="list-group-item bg-soft pl-0"><strong>5</strong> Example Pages</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-danger"><span class="fas fa-times-circle"></span></span> Uncoventional cards</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-danger"><span class="fas fa-times-circle"></span></span> Timelines</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-danger"><span class="fas fa-times-circle"></span></span> E-commerce</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-danger"><span class="fas fa-times-circle"></span></span> Widgets</li>
-                                    <li class="list-group-item bg-soft pl-0 pb-0"><span class="text-danger"><span class="fas fa-times-circle"></span></span> Premium Support</li>
-                                </ul>
-                            </div>
-                            <!-- End Content -->
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0 mt-lg-n4">
-                        <div class="card bg-soft shadow-soft border-light p-4">
-                            <!-- Header -->
-                            <div class="card-header pb-0">
-                                <span class="d-block">
-                                    <span class="h2 font-weight-bold align-top">Pro Version</span>
-                                </span>
-                            </div>
-                            <!-- End Header -->
-                            <!-- Content -->
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush price-list">
-                                    <li class="list-group-item bg-soft pl-0"><strong>1000+</strong> Components</li>
-                                    <li class="list-group-item bg-soft pl-0"><strong>13</strong> Example Pages</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-success"><span class="fas fa-check-circle"></span></span> Uncoventional cards</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-success"><span class="fas fa-check-circle"></span></span> Timelines</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-success"><span class="fas fa-check-circle"></span></span> E-commerce</li>
-                                    <li class="list-group-item bg-soft pl-0"><span class="text-success"><span class="fas fa-check-circle"></span></span> Widgets</li>
-                                    <li class="list-group-item bg-soft border-0 pl-0 pb-0"><span class="text-success"><span class="fas fa-check-circle"></span></span> Premium Support</li>
-                                </ul>
-                                <a href="https://themesberg.com/product/ui-kits/neumorphism-ui-pro" target="_blank" class="btn btn-block btn-primary text-secondary mt-4 mr-3"><i class="far fa-paper-plane mr-2"></i> Upgrade to PRO</a>
-                            </div>
-                            <!-- End Content -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
+
         
     </main>
 
-    @@include('./_footer.html', {
+    @@include('./_stagecentral_footer.html', {
         "path": ".",
         "classes": "bg-primary"
     })
