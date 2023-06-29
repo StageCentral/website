@@ -253,6 +253,18 @@ gulp.task('copy:dist:html:index', function () {
         .pipe(gulp.dest(paths.dist.base))
 });
 
+gulp.task('copy:dist:CNAME', function () {
+    return gulp.src([paths.src.base + 'CNAME'])
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: './src/partials/',
+            context: {
+                environment: 'production'
+            }
+        }))
+        .pipe(gulp.dest(paths.dist.base))
+});
+
 gulp.task('copy:dev:html:index', function () {
     return gulp.src([paths.src.base + '**.html'])
         .pipe(fileinclude({
@@ -287,8 +299,13 @@ gulp.task('copy:dev:vendor', function() {
       .pipe(gulp.dest(paths.dev.vendor));
 });
 
+gulp.task('copyCNAME', function() {
+    return gulp.src('CNAME')
+      .pipe(gulp.dest('dist'));
+});
+
 gulp.task('build:dev', gulp.series('clean:dev', 'copy:dev:css', 'copy:dev:html', 'copy:dev:html:index', 'copy:dev:assets', 'beautify:css', 'copy:dev:vendor'));
-gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:html:index', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:html:index', 'copy:dist:vendor'));
+gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:html:index','copy:dist:CNAME', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:html:index', 'copy:dist:vendor'));
 
 // Default
 gulp.task('default', gulp.series('serve'));
