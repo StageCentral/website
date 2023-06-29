@@ -1,9 +1,9 @@
 <header class="header-global">
     <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom @@classes">
         <div class="container position-relative">
-            <a class="navbar-brand py-2 px-3 mr-lg-4" href="@@path/index.html">
+            <a class="navbar-brand py-2 px-3 mr-lg-40" href="@@path/index.html">
                 <img class="navbar-brand-dark" src="@@path/assets/img/brand/dark.svg" alt="Logo light">
-                <img class="navbar-brand-light" src="@@path/assets/img/brand/dark.svg" alt="Logo dark">
+                <img class="navbar-brand-light" style="height: 40px;" src="@@path/assets/img/brand/dark.svg" alt="Logo dark">
             </a>
             <div class="navbar-collapse collapse" id="navbar_global">
                 <div class="navbar-collapse-header">
@@ -18,8 +18,28 @@
                         </div>
                     </div>
                 </div>
-                <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                    <li class="nav-item dropdown">
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    <div class="col pl-0">
+                        <ul class="list-style-none">
+                            <li><a class="dropdown-item rounded" href="@@path/html/components/accordions.html">Product</a></li>
+                        </ul>
+                    </div>                    
+                    <div class="col pl-0">
+                        <ul class="list-style-none">
+                            <li><a class="dropdown-item rounded" href="@@path/services.html">Services</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col pl-0">
+                        <ul class="list-style-none">
+                            <li><a class="dropdown-item rounded" href="@@path/services.html">Support</a></li>
+                        </ul>
+                    </div>                      
+                    <div class="col pl-0">
+                        <ul class="list-style-none">
+                            <li><a class="dropdown-item rounded" href="@@path/contact.html">Contact</a></li>
+                        </ul>
+                    </div>                      
+                    <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" >
                             <span class="nav-link-inner-text">Pages</span>
                             <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
@@ -31,8 +51,8 @@
                             <li><a class="dropdown-item" href="@@path/html/pages/sign-in.html">Sign in</a></li>
                             <li><a class="dropdown-item" href="@@path/html/pages/sign-up.html">Sign up</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown mega-dropdown">
+                    </li> -->
+                    <!-- <li class="nav-item dropdown mega-dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" >
                             <span class="nav-link-inner-text">Components</span>
                             <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
@@ -96,8 +116,8 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
+                    </li> -->
+                    <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" >
                             <span class="nav-link-inner-text">Support</span>
                             <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
@@ -122,12 +142,12 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul> -->
+                    </li> -->
+                </ul>
             </div>
             <div class="d-flex align-items-center">
                 <!-- <a href="#signup_form" class="btn btn-primary text-secondary mr-3"><i class="far fa-paper-plane mr-2"></i> Get notified when we release</a> -->
-                <button type="button" class="btn btn-primary mb-3 mb-lg-0 mr-3" data-toggle="modal" data-target="#modal-form-signup"><i class="fas fa-play mr-2"></i> Get Started</button>
+                <button type="button" class="btn btn-primary d-none d-md-inline-block" data-toggle="modal" data-target="#modal-form-signup"><i class="fas fa-play mr-2"></i> Get Started</button>
                 <!-- <a href="#signup_form" target="_blank" class="btn btn-primary d-none d-md-inline-block"><i class="fas fa-book"></i> Docs v1.0</a> -->
                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

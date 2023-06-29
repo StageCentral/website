@@ -20,9 +20,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>Neumorphism Components - Tables</title>
+<title>StageCentral - Backstage You Can Operate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="title" content="Neumorphism Components - Tables">
+<meta name="title" content="StageCentral - Backstage You Can Operate">
 <meta name="author" content="Themesberg">
 
 <link rel="canonical" href="https://themesberg.com/product/ui-kits/neumorphism-ui/" />
@@ -232,162 +232,82 @@
     </nav>
 </header>
     <main>
-       <!-- Hero -->
-       <div class="section-header pb-6 bg-primary overflow-hidden text-center border-bottom border-light">
-        <div class="container z-2">
-            <div class="row mb-4 justify-content-center">
-                <div class="col-12 col-md-8 col-lg-7">
-                    <h1 class="display-3 mb-4">Tables</h1>
-                    <p class="lead">Examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-6">
-                    <div class="alert shadow-inset">
-                        <div class="d-flex">
-                            <div class="alert-inner--text">
-                                <span class="icon text-danger icon-xs mr-2 mr-md-1"><span class="fas fa-file-alt"></span></span>
-                                <a target="_blank" href="https://themesberg.com/docs/neumorphism-ui/components/tables/">See our Documentation</a> for a detailed technical explanation.
+        <!-- Section -->
+        <section class="section section-lg">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-12 col-lg-12 mb-5">
+                        <!-- Contact Card -->
+                        <div class="card bg-primary shadow-soft border-light p-2 p-md-3 p-lg-5">
+                            <div class="card-header">
+                                <div class="row justify-content-center">
+                                    <!-- <div class="col-12">
+                                        <div class="shadow-inset p-4 mb-5 rounded">
+                                            <iframe class="map rounded" id="gmap_canvas" src="https://maps.google.com/maps?q=tel%aviv&t=&z=8&ie=UTF8&iwloc=&output=embed"></iframe>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-12 col-md-8 text-center mb-5">
+                                        <h1 class="display-2 mb-3">Get in touch today</h1>
+                                        <p class="lead">Have a new project in mind? Need help with an ongoing one? Drop us a line about your project needs, we answer same day.</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-md-4 col-lg-4 text-center">
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 text-center">
+                                        <!-- Email Box -->
+                                        <div class="icon-box mb-4">
+                                            <div class="icon icon-shape shadow-soft border-light rounded-circle mb-4">
+                                                <span class="far fa-paper-plane"></span>
+                                            </div>
+                                            <h2 class="h5 icon-box-title">
+                                            <a href="mailto:hello@stagecentral.io">hello@stagecentral.io</a>
+                                            </h2>
+                                            
+                                        </div>
+                                        <!-- End of Email Box -->
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Hero -->
+                            <form class="col-12 col-md-8 mx-auto" action="https://formspree.io/f/xbjvrkng" method="POST">
+                                <!-- Form -->
+                                <div class="form-group">
+                                    <label for="nameInputIcon2">Your Name</label>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><span class="far fa-user-circle"></span></span>
+                                        </div>
+                                        <input name="name" class="form-control" id="name" placeholder="e.g. Bonnie Green" type="text" aria-label="contact name input" required>
+                                    </div>
+                                </div>
+                                <!-- Form -->
+                                <div class="form-group">
+                                    <label for="emailInputIcon2">Your Email</label>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><span class="far fa-envelope"></span></span>
+                                        </div>
+                                        <input class="form-control" name="email" id="email" placeholder="example@company.com" type="email" aria-label="contact email input" required>
+                                    </div>
+                                </div>
+                                <!-- Form -->
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea2">Your Email</label>
+                                    <textarea class="form-control" name="message" placeholder="Enter your message..." id="message" rows="4"></textarea>
+                                </div>
+                                <!-- End of Form -->
+                                <div class="card-footer px-0 mx-auto">
+                                    <button type="submit" class="btn btn-primary">Send message</button>
+                                </div>
+                            </form>
 
-    <!-- End of Hero -->
-<div class="section bg-primary text-dark section-lg">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12">
-                <div class="mb-4">
-                    <span class="h5">Default table</span>
-                </div>
-                <div class="mb-5">
-                    <table class="table shadow-soft rounded">
-                        <tr>
-                            <th class="border-0" scope="col" id="class">Class</th>
-                            <th class="border-0" scope="col" id="teacher">Teacher</th>
-                            <th class="border-0" scope="col" id="males">Males</th>
-                            <th class="border-0" scope="col" id="females">Females</th>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="firstyear" rowspan="2">First Year</th>
-                            <th scope="row" id="Bolter" headers="firstyear teacher">D. Bolter</th>
-                            <td headers="firstyear Bolter males">5</td>
-                            <td headers="firstyear Bolter females">4</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="Cheetham" headers="firstyear teacher">A. Cheetham</th>
-                            <td headers="firstyear Cheetham males">7</td>
-                            <td headers="firstyear Cheetham females">9</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="secondyear" rowspan="3">Second Year</th>
-                            <th scope="row" id="Lam" headers="secondyear teacher">M. Lam</th>
-                            <td headers="secondyear Lam males">3</td>
-                            <td headers="secondyear Lam females">9</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="Crossy" headers="secondyear teacher">S. Crossy</th>
-                            <td headers="secondyear Crossy males">4</td>
-                            <td headers="secondyear Crossy females">3</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="Forsyth" headers="secondyear teacher">A. Forsyth</th>
-                            <td headers="secondyear Forsyth males">6</td>
-                            <td headers="secondyear Forsyth females">9</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="mb-5">
-                    <div class="mb-4">
-                        <span class="h5">Hoverable rows</span>
-                    </div>
-                    <table class="table table-hover shadow-inset rounded">
-                        <tr>
-                            <th class="border-0" scope="col" id="class3">Class</th>
-                            <th class="border-0" scope="col" id="teacher3">Teacher</th>
-                            <th class="border-0" scope="col" id="males3">Males</th>
-                            <th class="border-0" scope="col" id="females3">Females</th>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="firstyear3" rowspan="2">First Year</th>
-                            <th scope="row" id="Bolter3" headers="firstyear3 teacher3">D. Bolter</th>
-                            <td headers="firstyear3 Bolter3 males3">5</td>
-                            <td headers="firstyear3 Bolter3 females3">4</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="Cheetham3" headers="firstyear3 teacher3">A. Cheetham</th>
-                            <td headers="firstyear3 Cheetham3 males3">7</td>
-                            <td headers="firstyear3 Cheetham3 females3">9</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="secondyear3" rowspan="3">Second Year</th>
-                            <th scope="row" id="Lam3" headers="secondyear3 teacher3">M. Lam</th>
-                            <td headers="secondyear3 Lam3 males3">3</td>
-                            <td headers="secondyear3 Lam3 females3">9</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="Crossy3" headers="secondyear3 teacher3">S. Crossy</th>
-                            <td headers="secondyear3 Crossy3 males3">4</td>
-                            <td headers="secondyear3 Crossy3 females3">3</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="Forsyth3" headers="secondyear3 teacher3">A. Forsyth</th>
-                            <td headers="secondyear3 Forsyth3 males3">6</td>
-                            <td headers="secondyear3 Forsyth3 females3">9</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="mb-5">
-                    <div class="mb-4">
-                        <span class="h5">Responsive Table</span>
-                    </div>
-                    <div class="table-responsive-sm shadow-soft rounded">
-                        <table class="table table-striped">
-                            <tr>
-                                <th class="border-0" scope="col" id="class2">Class</th>
-                                <th class="border-0" scope="col" id="teacher2">Teacher</th>
-                                <th class="border-0" scope="col" id="males2">Males</th>
-                                <th class="border-0" scope="col" id="females2">Females</th>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="firstyear2" rowspan="2">First Year</th>
-                                <th scope="row" id="Bolter2" headers="firstyear2 teacher2">D. Bolter</th>
-                                <td headers="firstyear2 Bolter2 males2">5</td>
-                                <td headers="firstyear2 Bolter2 females2">4</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Cheetham2" headers="firstyear2 teacher2">A. Cheetham</th>
-                                <td headers="firstyear2 Cheetham2 males2">7</td>
-                                <td headers="firstyear2 Cheetham2 females2">9</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="secondyear2" rowspan="3">Second Year</th>
-                                <th scope="row" id="Lam2" headers="secondyear2 teacher2">M. Lam</th>
-                                <td headers="secondyear2 Lam2 males2">3</td>
-                                <td headers="secondyear2 Lam2 females2">9</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Crossy2" headers="secondyear2 teacher2">S. Crossy</th>
-                                <td headers="secondyear2 Crossy2 males2">4</td>
-                                <td headers="secondyear2 Crossy2 females2">3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Forsyth2" headers="secondyear2 teacher2">A. Forsyth</th>
-                                <td headers="secondyear2 Forsyth2 males2">6</td>
-                                <td headers="secondyear2 Forsyth2 females2">9</td>
-                            </tr>
-                        </table>
+                        </div>
+                        <!-- End of Contact Card -->
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
+        <!-- End of section -->
     </main>
     <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
     <div class="container">
