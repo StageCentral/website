@@ -40,9 +40,9 @@
                         <h2 class=" mb-3">Powered by the <a href="https://backstage.io" target="_blank" style="color: #36baa2;;"> Backstage</a> framework.</h2>
                         <p class="lead px-md-6 mb-5"><strong>StageCentral</strong> is an open-source software distribution of Backstage, built to run on Kubernetes. Created for platform teams that don't have time to waste.</p>
                         <div class="d-flex flex-column flex-wrap flex-md-row justify-content-md-center mb-5">
+                            <button type="button" class="btn text-info btn-primary mb-3 mb-lg-0 mr-3" onclick="window.location.href='https://calendly.com/stagecentral_io/call-with-backstage-expert'" ><i class="fas fa-video mr-2 test-dark"></i> Talk with a <b>Backstage</b> expert</button>
                             <button type="button" class="btn btn-primary mb-3 mb-lg-0 mr-3" data-toggle="modal" data-target="#modal-form-signup"><i class="fas fa-play mr-2"></i> Get Started</button>
-                            <button type="button" class="btn text-info btn-primary mb-3 mb-lg-0 mr-3" onclick="window.location.href='https://calendly.com/stagecentral_io/call-with-backstage-expert'" ><i class="fas fa-video mr-2 test-dark"></i> Schedule Video Call with <b>Backstage</b> Expert</button>
-                            </div>
+                        </div>
                             
                         </div>
                     </div>
@@ -122,15 +122,14 @@
         @@include('./components/_buttons.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
-        }) -->
+        
 
-        <a id="signup_form"></a>
         @@include('./components/_stagecentral_signup_form.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
         })
 
-        <!-- @@include('./components/_modals.html', {
+        @@include('./components/_modals.html', {
             "path": ".",
             "classes": "bg-primary pt-0"
         })
